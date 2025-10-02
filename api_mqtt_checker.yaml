@@ -1,0 +1,17 @@
+esphome:
+  name: esp32_test
+
+wifi:
+  ssid: "NHQ-Home-Wifi"
+  password: "gladyear2024"
+
+api:   # Native Home Assistant API mode
+
+mqtt:  # MQTT transport mode
+  broker: 192.168.1.96   
+  username: vipr
+  password: godawgs1785
+
+sensor:
+  - platform: uptime
+    name: "ESP32 Uptime"
